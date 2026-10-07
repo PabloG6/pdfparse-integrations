@@ -23,7 +23,7 @@ The [release ZIP](https://github.com/PabloG6/pdfparse-integrations/releases) con
 
 ## TypeScript SDK
 
-Download `pdfparse-sdk-0.1.0.tgz` from [releases](https://github.com/PabloG6/pdfparse-integrations/releases) and install it with `npm install ./pdfparse-sdk-0.1.0.tgz`. The public npm listing is pending publisher authentication.
+Download `pdfparse-sdk-0.1.1.tgz` from [releases](https://github.com/PabloG6/pdfparse-integrations/releases) and install it with `npm install ./pdfparse-sdk-0.1.1.tgz`. The public npm listing is pending publisher authentication.
 
 ```ts
 import { Client } from "pdfparse-sdk";
@@ -32,6 +32,8 @@ const tables = await client.tables.list();
 ```
 
 The SDK ships JavaScript for ESM and CommonJS with TypeScript declarations. Its project API key is separate from MCP OAuth. [SDK reference](sdk/README.md).
+
+The plugin and SDK are licensed under Apache 2.0; each distribution includes its LICENSE file.
 
 ## Directory metadata
 

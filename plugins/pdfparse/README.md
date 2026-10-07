@@ -4,7 +4,7 @@ The same package supports OpenAI and Claude Code. Claude's manifest is `.claude-
 
 This package bundles OAuth MCP access and three skills for ChatGPT and Codex. `plugin.json` and `mcp.json` use the portable Agent Plugins 1.0.0 layout. `.codex-plugin/plugin.json` and `.mcp.json` provide the compatibility layout. Keep both manifests synchronized; `pnpm plugin:check` checks this and verifies skill/review tool references. The repository marketplace at `.agents/plugins/marketplace.json` points to this local package.
 
-Build with `pnpm plugin:build`. The uploadable draft ZIP is `artifacts/plugins/pdfparse-0.1.0.zip`. This command validates the package contract locally; it does not execute the review scenarios in ChatGPT or prove production readiness.
+Build with `pnpm plugin:build`. The uploadable draft ZIP is `artifacts/plugins/pdfparse-0.1.1.zip`. This command validates the package contract locally; it does not execute the review scenarios in ChatGPT or prove production readiness.
 
 ## Runtime contract
 

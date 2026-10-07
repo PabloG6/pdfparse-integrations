@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "pdfparse",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Extract PDFs into structured tables and configure document inbox workflows in your PdfParse account.",
   "author": {
     "name": "PdfParse",
@@ -106,5 +106,6 @@
         "release_notes": "Initial plugin with OAuth account connection, PDF extraction, table creation, record search, inbox workflow setup, and routing and splitter management."
       }
     }
-  }
+  },
+  "license": "Apache-2.0"
 }

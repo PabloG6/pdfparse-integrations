@@ -1,12 +1,24 @@
 {
   "name": "pdfparse",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Extract PDFs into structured tables and configure document workflows in your PdfParse account.",
-  "author": { "name": "PdfParse", "url": "https://pdfparse.net" },
+  "author": {
+    "name": "PdfParse",
+    "url": "https://pdfparse.net"
+  },
   "homepage": "https://pdfparse.net/mcp",
   "repository": "https://github.com/PabloG6/pdfparse-integrations",
-  "keywords": ["pdf", "extraction", "documents", "mcp"],
+  "keywords": [
+    "pdf",
+    "extraction",
+    "documents",
+    "mcp"
+  ],
   "mcpServers": {
-    "pdfparse": { "type": "http", "url": "https://mcp.pdfparse.net/mcp" }
-  }
+    "pdfparse": {
+      "type": "http",
+      "url": "https://mcp.pdfparse.net/mcp"
+    }
+  },
+  "license": "Apache-2.0"
 }

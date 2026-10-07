@@ -1,6 +1,7 @@
 {
   "name": "pdfparse-sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "license": "Apache-2.0",
   "description": "TypeScript SDK for PdfParse document extraction, tables, routing, and workflows.",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -15,7 +16,8 @@
   },
   "files": [
     "dist",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "engines": {
     "node": ">=20"
