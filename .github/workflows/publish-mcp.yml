@@ -1,0 +1,23 @@
+name: Publish hosted MCP registry entry
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  id-token: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify hosted service
+        run: |
+          curl --fail --silent --show-error https://mcp.pdfparse.net/health
+          curl --fail --silent --show-error https://mcp.pdfparse.net/.well-known/oauth-protected-resource
+      - name: Install registry publisher
+        run: |
+          curl --fail --location --silent --show-error https://github.com/modelcontextprotocol/registry/releases/download/v1.8.1/mcp-publisher_linux_amd64.tar.gz -o /tmp/mcp-publisher.tar.gz
+          tar -xzf /tmp/mcp-publisher.tar.gz mcp-publisher
+      - name: Authenticate using GitHub identity
+        run: ./mcp-publisher login github-oidc
+      - name: Publish official registry metadata
+        run: ./mcp-publisher publish server.json

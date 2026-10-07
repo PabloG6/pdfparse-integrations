@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "pdfparse": {
+      "type": "http",
+      "url": "https://mcp.pdfparse.net/mcp"
+    }
+  }
+}

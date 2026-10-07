@@ -1,0 +1,10 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.PabloG6/pdfparse",
+  "title": "PdfParse",
+  "description": "Extract PDFs into structured tables, query records, and configure document inbox workflows.",
+  "version": "0.1.0",
+  "repository": { "url": "https://github.com/PabloG6/pdfparse-integrations", "source": "github" },
+  "websiteUrl": "https://pdfparse.net/mcp",
+  "remotes": [ { "type": "streamable-http", "url": "https://mcp.pdfparse.net/mcp" } ]
+}

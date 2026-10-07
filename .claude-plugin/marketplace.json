@@ -1,0 +1,12 @@
+{
+  "name": "pdfparse",
+  "owner": { "name": "PdfParse", "url": "https://pdfparse.net" },
+  "metadata": { "description": "Official PdfParse document extraction integrations." },
+  "plugins": [
+    {
+      "name": "pdfparse",
+      "source": "./plugins/pdfparse",
+      "description": "Connect PdfParse to extract PDFs, query records, and set up document workflows."
+    }
+  ]
+}
