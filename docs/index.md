@@ -40,7 +40,7 @@ codex mcp login pdfparse
 
 ### Claude and ChatGPT
 
-In Claude web or Desktop, add the remote endpoint as a custom connector and authorize your account. In ChatGPT developer mode, add it as an OAuth MCP connection. Availability depends on your client's plan and settings. An MCP Registry listing does not imply approval in the ChatGPT or Anthropic directories.
+In Claude web or Desktop, add the remote endpoint as a custom connector and authorize your account. In ChatGPT Plugins, select **Add custom MCP server**, enter the endpoint, and configure OAuth. See the [official connection quickstart](https://developers.openai.com/plugins/quickstart). Availability depends on your client's plan and settings. An MCP Registry listing does not imply approval in the ChatGPT or Anthropic directories.
 
 ## What you can ask for
 
