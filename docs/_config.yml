@@ -1,0 +1,5 @@
+title: PdfParse integrations
+description: Official PdfParse remote MCP connection, assistant plugins, and TypeScript SDK.
+theme: jekyll-theme-minimal
+url: https://pablog6.github.io
+baseurl: /pdfparse-integrations
