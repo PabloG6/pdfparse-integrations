@@ -23,7 +23,7 @@ The [release ZIP](https://github.com/PabloG6/pdfparse-integrations/releases) con
 
 ## TypeScript SDK
 
-Download `pdfparse-sdk-0.1.1.tgz` from [releases](https://github.com/PabloG6/pdfparse-integrations/releases) and install it with `npm install ./pdfparse-sdk-0.1.1.tgz`. The public npm listing is pending publisher authentication.
+Install the SDK from [npm](https://www.npmjs.com/package/pdfparse-sdk) with `npm install pdfparse-sdk`. The [SDK README](sdk/README.md) includes the complete invoice-to-JSON/CSV tutorial, and the package ships its runnable example and synthetic PDF.
 
 ```ts
 import { Client } from "pdfparse-sdk";

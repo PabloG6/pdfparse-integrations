@@ -781,6 +781,12 @@ var SplittersResource = class {
 
 // src/tus/uploader.ts
 var import_tus_js_client = require("tus-js-client");
+var MIN_CHUNK_SIZE = 5 * 1024 * 1024;
+var MAX_CHUNK_SIZE = 8 * 1024 * 1024;
+function resolveChunkSize(chunkSize) {
+  if (!chunkSize) return MAX_CHUNK_SIZE;
+  return Math.min(Math.max(chunkSize, MIN_CHUNK_SIZE), MAX_CHUNK_SIZE);
+}
 function extractUploadId(url) {
   const segments = url.split("?")[0]?.split("/").filter(Boolean) ?? [];
   const encodedId = segments[segments.length - 1] ?? "";
@@ -800,8 +806,7 @@ var TusUploader = class {
         endpoint: options.endpoint,
         metadata: options.metadata,
         headers: options.headers,
-        chunkSize: options.chunkSize || 8 * 1024 * 1024,
-        // 8MB default
+        chunkSize: resolveChunkSize(options.chunkSize),
         retryDelays: options.retryDelays || [0, 3e3, 5e3, 1e4, 2e4],
         onError: (error) => {
           if (options.onError) {
@@ -837,7 +842,7 @@ var TusUploader = class {
       endpoint: options.endpoint,
       metadata: options.metadata,
       headers: options.headers,
-      chunkSize: options.chunkSize || 8 * 1024 * 1024,
+      chunkSize: resolveChunkSize(options.chunkSize),
       retryDelays: options.retryDelays || [0, 3e3, 5e3, 1e4, 2e4],
       onError: options.onError,
       onProgress: options.onProgress,
